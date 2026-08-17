@@ -25,6 +25,14 @@ mainNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Jersey flip (tap to toggle on touch devices, hover handles it elsewhere)
+const jerseyFlip = document.querySelector('.jersey-flip');
+if (jerseyFlip) {
+  jerseyFlip.addEventListener('click', () => {
+    jerseyFlip.classList.toggle('is-flipped');
+  });
+}
+
 // Scroll reveal
 const revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && revealEls.length) {

@@ -357,19 +357,64 @@ img { max-width: 100%; display: block; }
 .jersey-showcase {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  gap: 40px;
-  flex-wrap: wrap;
   margin-top: 48px;
   padding: 32px;
   background: var(--paper-alt);
   border-radius: var(--radius);
 }
-.jersey-showcase img {
-  max-width: 260px;
+.jersey-flip {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+.jersey-flip img {
+  display: block;
   width: 100%;
   height: auto;
   filter: drop-shadow(0 18px 24px rgba(13, 39, 51, 0.16));
+}
+.jersey-flip .jersey-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.jersey-flip:hover .jersey-back,
+.jersey-flip:focus-visible .jersey-back,
+.jersey-flip.is-flipped .jersey-back {
+  opacity: 1;
+}
+.jersey-flip:hover .jersey-front,
+.jersey-flip:focus-visible .jersey-front,
+.jersey-flip.is-flipped .jersey-front {
+  opacity: 0;
+}
+.jersey-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(13, 39, 51, 0.8);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: opacity 0.25s ease;
+}
+.jersey-flip:hover .jersey-hint,
+.jersey-flip:focus-visible .jersey-hint,
+.jersey-flip.is-flipped .jersey-hint {
+  opacity: 0;
 }
 .jersey-caption {
   text-align: center;
