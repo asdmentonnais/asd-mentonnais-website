@@ -817,6 +817,8 @@ img { max-width: 100%; display: block; }
 .footer-brand .brand-text { color: #fff; }
 .footer-brand p { margin: 6px 0 0; color: rgba(255,255,255,0.55); }
 .footer-info p { margin: 0 0 6px; }
+.footer-info a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.35); }
+.footer-info a:hover { text-decoration-color: #fff; }
 .footer-legal { text-align: right; }
 .footer-inner > div:last-child { border: 0; }
 .site-footer .footer-legal p { margin: 0; }
