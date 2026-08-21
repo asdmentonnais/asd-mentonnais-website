@@ -168,6 +168,7 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 .main-nav a:hover { color: var(--ink); }
@@ -295,6 +296,23 @@ img { max-width: 100%; display: block; }
 .section-dark .lead { color: rgba(255,255,255,0.85); }
 .section-dark .container { position: relative; z-index: 1; }
 .section-cta { background: var(--paper-alt); }
+
+.cal-page-hero { padding-top: 150px; padding-bottom: 40px; }
+.cal-full { padding-top: 20px; }
+.cal-month { max-width: 760px; margin: 0 auto 40px; }
+.cal-month-heading {
+  font-size: 1.1rem;
+  color: var(--blue-dark);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.cal-full > .container > .link-arrow {
+  display: block;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
 
 .track-texture {
   position: absolute;
@@ -477,6 +495,27 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 
+.label-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+.label-row li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(22, 104, 176, 0.08);
+  color: var(--blue-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 999px;
+}
+.label-row svg { color: var(--blue-vivid); flex-shrink: 0; }
+
 /* ============================================
    Day cards (école d'athlétisme)
 ============================================ */
@@ -636,7 +675,8 @@ img { max-width: 100%; display: block; }
   background: var(--blue);
   color: #fff;
 }
-.competition-list li:nth-child(2) .comp-date { background: var(--blue-light); }
+.competition-list li:nth-child(3n+2) .comp-date { background: var(--blue-light); }
+.competition-list li:nth-child(3n) .comp-date { background: var(--blue-vivid); }
 .comp-day {
   font-family: var(--font-display);
   font-weight: 800;
@@ -653,6 +693,23 @@ img { max-width: 100%; display: block; }
 .comp-info h3 { margin-bottom: 2px; font-size: 1.05rem; }
 .comp-info p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
 
+.calendar-disclaimer {
+  margin: 14px 4px 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin: 16px 4px 0;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--blue-dark);
+  text-decoration: none;
+}
+.link-arrow:hover { text-decoration: underline; }
+
 .instagram-embed-wrap {
   margin-top: 32px;
   display: flex;
@@ -660,13 +717,21 @@ img { max-width: 100%; display: block; }
 }
 .instagram-embed-wrap iframe { border-radius: var(--radius) !important; }
 
-.route-embed {
+.route-embeds {
   margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.route-embed {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+}
+@media (max-width: 640px) {
+  .route-embeds { grid-template-columns: 1fr; }
 }
 /* The Strava embed script hardcodes a fixed pixel width on its iframe that
    doesn't match our column width, leaving a gap on the right. Force it full width. */
@@ -732,6 +797,15 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   gap: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  border: 3px solid var(--paper-alt);
+  box-shadow: var(--shadow-soft);
 }
 .contact-card:hover {
   transform: translateY(-4px);
@@ -819,6 +893,20 @@ img { max-width: 100%; display: block; }
 .footer-info p { margin: 0 0 6px; }
 .footer-info a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.35); }
 .footer-info a:hover { text-decoration-color: #fff; }
+
+.footer-socials { display: flex; gap: 10px; margin-top: 10px; }
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.8);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.footer-social-link:hover { background: var(--blue-vivid); color: #fff; }
 .footer-legal { text-align: right; }
 .footer-inner > div:last-child { border: 0; }
 .site-footer .footer-legal p { margin: 0; }
@@ -880,7 +968,6 @@ img { max-width: 100%; display: block; }
   .main-nav li { border-bottom: 1px solid var(--line); }
   .main-nav a { display: block; padding: 18px 0; font-size: 1.05rem; }
   .nav-toggle { display: flex; }
-  .header-actions .btn-primary.btn-sm { display: none; }
 }
 
 @media (max-width: 560px) {
