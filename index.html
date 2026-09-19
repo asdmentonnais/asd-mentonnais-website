@@ -6,523 +6,382 @@
 <title>ASD Mentonnais — Club d'athlétisme à Menton</title>
 <meta name="description" content="L'ASD Mentonnais (ASDM) est le club d'athlétisme de Menton. Écoles d'athlétisme, entraînements pour tous les âges au Stade Saint-Roman, de l'éveil aux masters.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="assets/nocturne.css">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden">
 
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+<a href="#club" class="skip-link">Aller au contenu</a>
 
-<header class="site-header" id="site-header">
-  <div class="container header-inner">
-    <a href="#" class="brand" aria-label="ASD Mentonnais - Accueil">
-      <img class="brand-mark" src="assets/logo-mark.png" alt="" width="52" height="40">
-      <span class="brand-text">ASD<strong>M</strong></span>
+<header style="position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--color-bg) 82%, transparent); border-bottom: 1px solid var(--color-divider)">
+  <nav style="max-width: 1220px; margin: 0 auto; padding: 14px clamp(20px, 5vw, 56px); display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+    <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--color-text); font-family: var(--font-heading); font-size: 19px; letter-spacing: 0.06em; font-weight: 600">
+      <img src="assets/logo-mark.png" alt="" style="height: 38px; width: auto; filter: brightness(0) invert(0.93); opacity: 0.95">
+      <span>ASD<span style="color: var(--color-accent)">M</span></span>
     </a>
-
-    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="#club">L'association</a></li>
-        <li><a href="#ecole">Entraînements</a></li>
-        <li><a href="#calendrier">Compétitions</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="organigramme.html">Organigramme</a></li>
-        <li><a href="#vie-du-club">Communauté</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-actions">
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div style="flex: 1"></div>
+    <div style="display: flex; align-items: center; gap: clamp(14px, 2vw, 26px); flex-wrap: wrap; font-size: 13.5px">
+      <a href="#club" class="nav-link">Le club</a>
+      <a href="#entrainements" class="nav-link">Entraînements</a>
+      <a href="calendrier.html" class="nav-link">Calendrier</a>
+      <a href="organigramme.html" class="nav-link">Organigramme</a>
+      <a href="#communaute" class="nav-link">Communauté</a>
+      <a href="#contact" class="btn btn-primary" style="font-size: 13px; padding: 8px 16px; border-radius: 999px">Prendre une licence</a>
     </div>
-  </div>
+  </nav>
 </header>
 
-<main id="contenu">
+<main>
 
-  <!-- HERO -->
-  <section class="hero" id="accueil">
-    <div class="hero-bg" aria-hidden="true">
-      <svg class="stadium-track" viewBox="0 0 700 400">
-        <rect x="80" y="15" width="540" height="350" rx="175" class="lane lane-6"/>
-        <rect x="100" y="35" width="500" height="310" rx="155" class="lane lane-5"/>
-        <rect x="120" y="55" width="460" height="270" rx="135" class="lane lane-4"/>
-        <rect x="140" y="75" width="420" height="230" rx="115" class="lane lane-3"/>
-        <rect x="160" y="95" width="380" height="190" rx="95" class="lane lane-2"/>
-        <rect x="180" y="115" width="340" height="150" rx="75" class="lane lane-1"/>
-        <line x1="530" y1="20" x2="530" y2="360" class="finish-line"/>
-      </svg>
+  <section id="top" style="position: relative; max-width: 1220px; margin: 0 auto; padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 56px) clamp(40px, 6vw, 88px)">
+    <div style="position: absolute; inset: 0; overflow: hidden; pointer-events: none" aria-hidden="true">
+      <div style="position: absolute; top: 52%; right: -640px; width: 1180px; height: 1180px; transform: translateY(-50%); border-radius: 50%; background: repeating-radial-gradient(circle at 50% 50%, transparent 0 37px, color-mix(in srgb, var(--color-accent) 85%, transparent) 37px 39px); -webkit-mask-image: linear-gradient(to left, #000 20%, transparent 78%); mask-image: linear-gradient(to left, #000 18%, transparent 82%); opacity: 0.85"></div>
+      <div style="position: absolute; top: -140px; right: -160px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 20%, transparent), transparent 62%); filter: blur(12px)"></div>
     </div>
-    <div class="container hero-inner">
-      <p class="eyebrow reveal">Association Sportive du Mentonnais</p>
-      <h1 class="reveal">
-        Grandir. Progresser.<br>
-        <span class="text-accent">Se dépasser.</span>
-      </h1>
-      <p class="hero-lead reveal">
-        L'ASD Mentonnais accueille enfants, jeunes et adultes au Stade Saint-Roman,
-        de l'initiation à la compétition — dans une ambiance conviviale, au cœur de Menton.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-primary">Prendre une licence ASDM</a>
-        <a href="#club" class="btn btn-ghost">Découvrir l'ASDM ↓</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 01 · LE CLUB -->
-  <section class="section" id="club">
-    <div class="container">
-      <div class="section-grid">
-        <div class="section-head">
-          <p class="kicker"><span class="kicker-num">01</span>Notre terrain de jeu</p>
-          <h2>Tous les âges.<br>Une seule ambition&nbsp;: progresser.</h2>
+    <div style="position: relative; display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.85fr); gap: clamp(28px, 5vw, 72px); align-items: end">
+      <div style="animation: asdmRise 0.7s ease both">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 26px">
+          <span style="width: 28px; height: 2px; background: var(--color-accent); display: block"></span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent-300)">Association Sportive du Mentonnais</span>
         </div>
-        <div class="section-body">
-          <p class="lead">
-            L'ASD Mentonnais est le club d'athlétisme où l'on apprend les fondamentaux,
-            développe ses qualités physiques et découvre le plaisir de progresser en équipe —
-            de l'initiation à la compétition.
-          </p>
-          <p>
-            Sur piste, sur route et en trail, l'ASDM est de toutes les foulées&nbsp;: une
-            <a href="#running">entente avec Menton Marathon</a> vient encore élargir cette offre.
-          </p>
-          <ul class="discipline-row">
-            <li>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19 9 11l3 3 4-6 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="6" r="1.6" fill="currentColor"/></svg>
-              <span>Courses</span>
-            </li>
-            <li>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 18c3-1 5-8 9-8s6 7 9 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="8" r="1.6" fill="currentColor"/></svg>
-              <span>Sauts</span>
-            </li>
-            <li>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 12 20 20M20 20v-5M20 20h-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Lancers</span>
-            </li>
-            <li>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20c3-4 3-7 0-11M20 4c-3 4-3 7 0 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 9c5 3 11 3 16-5M20 15c-5-3-11-3-16 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-              <span>Route &amp; trail</span>
-            </li>
-          </ul>
-          <blockquote class="pull-quote">
-            « Le seul chrono qui compte, c'est le tien. »
-          </blockquote>
-          <div class="fact-row">
-            <div class="fact">
-              <span class="fact-label">Où</span>
-              <span class="fact-value">Stade Saint-Roman, Menton</span>
-            </div>
-            <div class="fact">
-              <span class="fact-label">Coordonnées</span>
-              <span class="fact-value">43.8019° N · 7.4878° E</span>
-            </div>
-          </div>
-
-          <ul class="label-row">
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M12 6c-3 0-6 2-6 5s3 4 6 4 6 1 6 4-3 5-6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-              <span>Label DD Athlé06 · Développement durable</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              <span>Label FFA Bronze · Activité Stade</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              <span>Label FFA Argent · Éducation athlétique</span>
-            </li>
-          </ul>
+        <h1 style="font-size: clamp(46px, 8.4vw, 104px); line-height: 0.94; letter-spacing: -0.035em; margin: 0 0 26px; text-wrap: balance">Grandir.<br>Progresser.<br><span style="color: var(--color-accent)">Se dépasser.</span></h1>
+        <p style="font-size: clamp(16px, 1.5vw, 19px); line-height: 1.6; max-width: 54ch; color: var(--color-neutral-300); margin: 0 0 32px">Le club d'athlétisme de Menton, de l'éveil athlétique aux masters. On y vient pour apprendre à courir, sauter et lancer — on y reste pour le groupe.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a href="#entrainements" class="btn btn-primary" style="padding: 13px 24px; border-radius: 999px; font-size: 15px">Voir les créneaux ↓</a>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px; border-left: 1px solid var(--color-divider); padding-left: clamp(18px, 2.5vw, 32px)">
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 6px">Où</div>
+          <div style="font-size: 16px">Stade Saint-Roman<br><span style="color: var(--color-neutral-500)">205 allée du Stade, Menton</span></div>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 6px">Saison</div>
+          <div style="font-size: 16px">2026 – 2027<br><span style="color: var(--color-neutral-500)">Inscriptions ouvertes</span></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px">
+          <span class="tag tag-outline" style="font-size: 11px">Label FFA Argent</span>
+          <span class="tag tag-outline" style="font-size: 11px">Label FFA Bronze</span>
+          <span class="tag tag-outline" style="font-size: 11px">Label DD Athlé 06</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 02 · POURQUOI REJOINDRE -->
-  <section class="section section-alt" id="pourquoi">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker"><span class="kicker-num">02</span>Pourquoi nous rejoindre</p>
-        <h2>L'esprit ASDM, en quatre points</h2>
-      </div>
-
-      <div class="pillar-cards">
-        <article class="pillar-card">
-          <div class="pillar-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7c0-1.7 1.3-3 3-3h10c1.7 0 3 1.3 3 3v3a4 4 0 0 1-4 4h-1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 7v3a4 4 0 0 0 4 4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3>Encadrement passionné</h3>
-          <p>Des entraîneurs et bénévoles impliqués, qui accompagnent chaque athlète à son rythme et vers ses propres objectifs.</p>
-        </article>
-        <article class="pillar-card">
-          <div class="pillar-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 20c.3-2.3 1.8-4 4-4s3.7 1.7 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Un groupe pour chaque âge</h3>
-          <p>De l'éveil aux masters, chacun trouve sa séance, son groupe de niveau et des partenaires d'entraînement.</p>
-        </article>
-        <article class="pillar-card">
-          <div class="pillar-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3>Un stade rien qu'à nous</h3>
-          <p>Le Stade Saint-Roman, un cadre dédié pour s'entraîner toute l'année, à deux pas de la Méditerranée.</p>
-        </article>
-        <article class="pillar-card">
-          <div class="pillar-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.35-9.5-8.5C1 8 2.5 4.5 6 4c2-.3 4 .8 6 3 2-2.2 4-3.3 6-3 3.5.5 5 4 3.5 7.5C21 15.65 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Une vie hors piste</h3>
-          <p>Communauté Strava, entente running avec Menton Marathon&nbsp;: l'ASDM ne s'arrête pas à l'entraînement.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 03 · ECOLE D'ATHLETISME -->
-  <section class="section" id="ecole">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker"><span class="kicker-num">03</span>De l'éveil aux masters</p>
-        <h2>Nos groupes d'entraînement</h2>
-        <p class="lead lead-center">À chaque âge son groupe, son rythme d'entraînement et ses objectifs.</p>
-      </div>
-
-      <div class="day-cards">
-        <article class="day-card">
-          <h3 class="day-name">Lundi</h3>
-          <div class="day-slot">
-            <span class="day-slot-time">18h15 – 20h00</span>
-            <ul class="day-slot-groups">
-              <li>
-                <span class="day-group-name">Minimes · Cadets · Juniors · Espoirs · Seniors · Masters</span>
-                <span class="day-group-desc">Entraînement structuré vers la performance, ou pratique régulière pour les athlètes adultes.</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="day-card">
-          <h3 class="day-name">Mercredi</h3>
-          <div class="day-slot">
-            <span class="day-slot-time">16h45 – 18h00</span>
-            <ul class="day-slot-groups">
-              <li>
-                <span class="day-group-name">Éveil · Poussins</span>
-                <span class="day-group-desc">Découverte ludique de la course, du saut et du lancer, pour développer la motricité et le goût du mouvement.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="day-slot">
-            <span class="day-slot-time">18h15 – 20h00</span>
-            <ul class="day-slot-groups">
-              <li>
-                <span class="day-group-name">Benjamins · Minimes</span>
-                <span class="day-group-desc">Première approche multi-épreuves en groupe, avec les premières compétitions fédérales.</span>
-              </li>
-              <li>
-                <span class="day-group-name">Cadets · Juniors · Espoirs · Seniors · Masters</span>
-                <span class="day-group-desc">Entraînement structuré vers la performance, ou pratique régulière pour les athlètes adultes.</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="day-card">
-          <h3 class="day-name">Vendredi</h3>
-          <div class="day-slot">
-            <span class="day-slot-time">18h15 – 20h00</span>
-            <ul class="day-slot-groups">
-              <li>
-                <span class="day-group-name">Benjamins · Minimes</span>
-                <span class="day-group-desc">Première approche multi-épreuves en groupe, avec les premières compétitions fédérales.</span>
-              </li>
-              <li>
-                <span class="day-group-name">Cadets · Juniors · Espoirs · Seniors · Masters</span>
-                <span class="day-group-desc">Entraînement structuré vers la performance, ou pratique régulière pour les athlètes adultes.</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-
-      <div class="location-strip">
-        <div class="location-text">
-          <p class="kicker">On se retrouve où&nbsp;?</p>
-          <h3>Au Stade Saint-Roman</h3>
-          <p class="lead">205 allée du Stade, 06500 Menton — un lieu dédié pour apprendre, s'entraîner et progresser ensemble, à deux pas de la Méditerranée.</p>
-          <a class="map-link" href="https://www.openstreetmap.org/?mlat=43.8019&mlon=7.4878#map=16/43.8019/7.4878" target="_blank" rel="noopener">Voir le plan en grand ↗</a>
+  <section id="club" style="max-width: 1220px; margin: 0 auto; padding: clamp(60px, 8vw, 110px) clamp(20px, 5vw, 56px) clamp(40px, 5vw, 72px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+          <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">01</span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Pourquoi nous rejoindre</span>
         </div>
-        <div class="map-frame">
-          <iframe
-            title="Localisation du Stade Saint-Roman, Menton"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=7.4698%2C43.7919%2C7.5058%2C43.8119&layer=mapnik&marker=43.8019%2C7.4878"
-            loading="lazy">
-          </iframe>
+        <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; max-width: 14ch; margin: 0 0 18px; text-wrap: balance">L'esprit ASDM.</h2>
+        <p style="max-width: 44ch; color: var(--color-neutral-400); font-size: 17px; margin: 0">Un club à taille humaine, où l'on progresse à son rythme sans jamais s'entraîner seul.</p>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div style="padding: clamp(16px, 2vw, 22px) 0; border-bottom: 1px solid var(--color-divider)">
+          <h3 style="font-size: 19px; margin: 0 0 6px">Un encadrement diplômé</h3>
+          <p style="color: var(--color-neutral-400); font-size: 14.5px; margin: 0; max-width: 48ch">Des entraîneurs brevetés FFA et des bénévoles présents à chaque séance.</p>
+        </div>
+        <div style="padding: clamp(16px, 2vw, 22px) 0; border-bottom: 1px solid var(--color-divider)">
+          <h3 style="font-size: 19px; margin: 0 0 6px">Un groupe pour chaque âge</h3>
+          <p style="color: var(--color-neutral-400); font-size: 14.5px; margin: 0; max-width: 48ch">Six séances hebdomadaires réparties par catégorie, de 6 ans aux masters.</p>
+        </div>
+        <div style="padding: clamp(16px, 2vw, 22px) 0">
+          <h3 style="font-size: 19px; margin: 0 0 6px">Une vie hors piste</h3>
+          <p style="color: var(--color-neutral-400); font-size: 14.5px; margin: 0; max-width: 48ch">Club Strava, entente running avec Menton Marathon, stages et déplacements en groupe.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 04 · CALENDRIER DES COMPETITIONS -->
-  <section class="section section-alt" id="calendrier">
-    <div class="container">
-      <div class="section-grid section-grid-reverse">
-        <div class="section-body">
-          <p class="kicker"><span class="kicker-num">04</span>Saison 2026 – 2027</p>
-          <h2>Le calendrier des compétitions</h2>
-          <p class="lead">
-            Voici les prochains rendez-vous des deux prochains mois&nbsp;: courses, stages
-            et temps forts de la vie du club.
-          </p>
-        </div>
-        <div class="section-media">
-          <ul class="competition-list">
-            <li>
-              <div class="comp-date"><span class="comp-day">27</span><span class="comp-month">Sep</span></div>
-              <div class="comp-info">
-                <h3>Trail de Gorbio</h3>
-                <p>Trail · Gorbio · Courses enfants &amp; adultes · Co-organisé par l'ASDM</p>
-              </div>
-            </li>
-            <li>
-              <div class="comp-date"><span class="comp-day">11</span><span class="comp-month">Oct</span></div>
-              <div class="comp-info">
-                <h3>1/2 finale des championnats de France de 5&nbsp;km</h3>
-                <p>Route · Sainte-Tulle · Cadets et plus</p>
-              </div>
-            </li>
-            <li>
-              <div class="comp-date"><span class="comp-day">19</span><span class="comp-month">Oct</span></div>
-              <div class="comp-info">
-                <h3>Stage benjamins et plus</h3>
-                <p>Stage sportif ASDM · Du 19 au 22 octobre · Benjamins et athlètes plus âgés</p>
-              </div>
-            </li>
-            <li>
-              <div class="comp-date"><span class="comp-day">23</span><span class="comp-month">Oct</span></div>
-              <div class="comp-info">
-                <h3>Stage éveil &amp; poussins</h3>
-                <p>Stage sportif ASDM · Éveil et Poussins</p>
-              </div>
-            </li>
-            <li>
-              <div class="comp-date"><span class="comp-day">25</span><span class="comp-month">Oct</span></div>
-              <div class="comp-info">
-                <h3>City Trail du Campanin</h3>
-                <p>Trail · Menton · 11,5 km, 364 m D+</p>
-              </div>
-            </li>
-          </ul>
-          <p class="calendar-disclaimer">Calendrier donné à titre indicatif&nbsp;: la présence de l'ASDM à chacune de ces dates n'est pas systématique.</p>
-          <a class="link-arrow" href="calendrier.html">Voir le calendrier complet de la saison ↗</a>
+  <section id="entrainements" style="border-top: 1px solid var(--color-divider); background: linear-gradient(180deg, var(--color-surface), var(--color-bg) 70%)">
+    <div style="max-width: 1220px; margin: 0 auto; padding: clamp(34px, 4.4vw, 62px) clamp(20px, 5vw, 56px) clamp(38px, 4.6vw, 66px)">
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+        <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">02</span>
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">De l'éveil aux masters</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(26px, 3vw, 40px)">
+        <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; margin: 0; max-width: 16ch">Trouvez votre créneau.</h2>
+        <p style="color: var(--color-neutral-400); font-size: 15px; margin: 0; max-width: 42ch">Trois soirs par semaine au Stade Saint-Roman. Filtrez par catégorie pour ne voir que les séances qui vous concernent.</p>
+      </div>
 
-          <div class="route-embeds">
-            <div class="route-embed">
-              <p class="route-embed-label">Tracé du Trail de Gorbio</p>
-              <div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3525987253165406986" data-style="hybrid" data-terrain="3d" data-surface-type="true" data-map-hash="11.51/43.7824/7.4321" data-from-embed="true" data-token="U0f0BH3DekKYXL7RMGMiPm8K5NV0LVMoji3zt5yJADo"></div>
-            </div>
-            <div class="route-embed">
-              <p class="route-embed-label">Tracé du City Trail du Campanin</p>
-              <div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3523989199381940374" data-style="hybrid" data-terrain="3d" data-surface-type="true" data-map-hash="12.81/43.78456/7.51451" data-from-embed="true" data-token="qg6Y2GskEwGerSRrd-diHQV0qY158kFCiJDoaqtofTo"></div>
-            </div>
+      <div data-role="training-filters" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(22px, 3vw, 34px)">
+        <button type="button" class="pill-btn is-active" data-filter="tous">Tous les groupes</button>
+        <button type="button" class="pill-btn" data-filter="petits">Éveil &amp; Poussins</button>
+        <button type="button" class="pill-btn" data-filter="moyens">Benjamins &amp; Minimes</button>
+        <button type="button" class="pill-btn" data-filter="grands">Cadets → Masters</button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(14px, 1.6vw, 22px); align-items: stretch">
+
+        <div data-role="training-day" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(20px, 2.4vw, 28px); background: color-mix(in srgb, var(--color-bg) 70%, transparent); display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-divider); padding-bottom: 14px">
+            <h3 style="font-size: 24px; margin: 0">Lundi</h3>
+            <span data-role="day-count" style="font-size: 12px; color: var(--color-neutral-500)">1 séance</span>
+          </div>
+          <div data-cat="grands" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">18h15 – 20h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Minimes → Masters</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Entraînement structuré vers la performance, ou pratique régulière pour les adultes.</div>
+          </div>
+          <div data-role="day-empty" class="slot-empty" hidden>Pas de séance pour ce groupe</div>
+        </div>
+
+        <div data-role="training-day" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(20px, 2.4vw, 28px); background: color-mix(in srgb, var(--color-bg) 70%, transparent); display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-divider); padding-bottom: 14px">
+            <h3 style="font-size: 24px; margin: 0">Mercredi</h3>
+            <span data-role="day-count" style="font-size: 12px; color: var(--color-neutral-500)">3 séances</span>
+          </div>
+          <div data-cat="petits" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">16h45 – 18h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Éveil · Poussins</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Découverte ludique de la course, du saut et du lancer — motricité et goût du mouvement.</div>
+          </div>
+          <div data-cat="moyens" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">18h15 – 20h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Benjamins · Minimes</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Première approche multi-épreuves en groupe, avec les premières compétitions fédérales.</div>
+          </div>
+          <div data-cat="grands" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">18h15 – 20h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Cadets → Masters</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Entraînement structuré vers la performance, ou pratique régulière pour les adultes.</div>
+          </div>
+          <div data-role="day-empty" class="slot-empty" hidden>Pas de séance pour ce groupe</div>
+        </div>
+
+        <div data-role="training-day" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(20px, 2.4vw, 28px); background: color-mix(in srgb, var(--color-bg) 70%, transparent); display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--color-divider); padding-bottom: 14px">
+            <h3 style="font-size: 24px; margin: 0">Vendredi</h3>
+            <span data-role="day-count" style="font-size: 12px; color: var(--color-neutral-500)">2 séances</span>
+          </div>
+          <div data-cat="moyens" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">18h15 – 20h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Benjamins · Minimes</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Première approche multi-épreuves en groupe, avec les premières compétitions fédérales.</div>
+          </div>
+          <div data-cat="grands" class="slot-filled">
+            <div style="font-family: var(--font-heading); font-size: 15px; color: var(--color-accent-300); letter-spacing: 0.02em; margin-bottom: 8px">18h15 – 20h00</div>
+            <div style="font-size: 15px; margin-bottom: 6px">Cadets → Masters</div>
+            <div style="font-size: 13.5px; color: var(--color-neutral-500); line-height: 1.5">Entraînement structuré vers la performance, ou pratique régulière pour les adultes.</div>
+          </div>
+          <div data-role="day-empty" class="slot-empty" hidden>Pas de séance pour ce groupe</div>
+        </div>
+
+      </div>
+
+      <div style="margin-top: clamp(26px, 3vw, 40px); display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--color-divider); padding-top: clamp(18px, 2.4vw, 26px)">
+        <div style="font-size: 14px; color: var(--color-neutral-400)">Stade Saint-Roman — 205 allée du Stade, 06500 Menton</div>
+        <a href="https://www.openstreetmap.org/?mlat=43.8019&mlon=7.4878#map=16/43.8019/7.4878" target="_blank" rel="noopener" style="font-size: 14px">Itinéraire ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendrier-teaser" style="max-width: 1220px; margin: 0 auto; padding: clamp(34px, 4.4vw, 62px) clamp(20px, 5vw, 56px) clamp(60px, 8vw, 110px)">
+    <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+      <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">03</span>
+      <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Saison 2026 – 2027</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(26px, 3vw, 44px)">
+      <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; margin: 0; max-width: 16ch">Les prochains rendez-vous.</h2>
+      <a href="calendrier.html" style="font-size: 14px">Calendrier complet de la saison ↗</a>
+    </div>
+    <div style="border-top: 1px solid var(--color-divider)">
+      <a href="calendrier.html" class="event-row" style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: clamp(14px, 2.4vw, 32px); align-items: center; padding: clamp(16px, 2vw, 24px) 6px; border-bottom: 1px solid var(--color-divider); text-decoration: none; color: inherit">
+        <div style="text-align: center; border-right: 1px solid var(--color-divider); padding-right: 12px">
+          <div style="font-family: var(--font-heading); font-size: 26px; line-height: 1">27</div>
+          <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-neutral-500)">Sep</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); margin-bottom: 5px">Trail de Gorbio</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-500)">Gorbio · Courses enfants &amp; adultes · Co-organisé par l'ASDM</div>
+        </div>
+        <span class="tag tag-accent" style="font-size: 11px; white-space: nowrap">Trail</span>
+      </a>
+      <a href="calendrier.html" class="event-row" style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: clamp(14px, 2.4vw, 32px); align-items: center; padding: clamp(16px, 2vw, 24px) 6px; border-bottom: 1px solid var(--color-divider); text-decoration: none; color: inherit">
+        <div style="text-align: center; border-right: 1px solid var(--color-divider); padding-right: 12px">
+          <div style="font-family: var(--font-heading); font-size: 26px; line-height: 1">11</div>
+          <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-neutral-500)">Oct</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); margin-bottom: 5px">1/2 finale des championnats de France de 5 km</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-500)">Sainte-Tulle · Cadets et plus</div>
+        </div>
+        <span class="tag tag-accent" style="font-size: 11px; white-space: nowrap">Route</span>
+      </a>
+      <a href="calendrier.html" class="event-row" style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: clamp(14px, 2.4vw, 32px); align-items: center; padding: clamp(16px, 2vw, 24px) 6px; border-bottom: 1px solid var(--color-divider); text-decoration: none; color: inherit">
+        <div style="text-align: center; border-right: 1px solid var(--color-divider); padding-right: 12px">
+          <div style="font-family: var(--font-heading); font-size: 26px; line-height: 1">19</div>
+          <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-neutral-500)">Oct</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); margin-bottom: 5px">Stage benjamins et plus</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-500)">Du 19 au 22 octobre · Benjamins et athlètes plus âgés</div>
+        </div>
+        <span class="tag tag-accent" style="font-size: 11px; white-space: nowrap">Stage</span>
+      </a>
+      <a href="calendrier.html" class="event-row" style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: clamp(14px, 2.4vw, 32px); align-items: center; padding: clamp(16px, 2vw, 24px) 6px; border-bottom: 1px solid var(--color-divider); text-decoration: none; color: inherit">
+        <div style="text-align: center; border-right: 1px solid var(--color-divider); padding-right: 12px">
+          <div style="font-family: var(--font-heading); font-size: 26px; line-height: 1">23</div>
+          <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-neutral-500)">Oct</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); margin-bottom: 5px">Stage éveil &amp; poussins</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-500)">Stage sportif ASDM · Éveil et Poussins</div>
+        </div>
+        <span class="tag tag-accent" style="font-size: 11px; white-space: nowrap">Stage</span>
+      </a>
+      <a href="calendrier.html" class="event-row" style="display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: clamp(14px, 2.4vw, 32px); align-items: center; padding: clamp(16px, 2vw, 24px) 6px; border-bottom: 1px solid var(--color-divider); text-decoration: none; color: inherit">
+        <div style="text-align: center; border-right: 1px solid var(--color-divider); padding-right: 12px">
+          <div style="font-family: var(--font-heading); font-size: 26px; line-height: 1">25</div>
+          <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-neutral-500)">Oct</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); margin-bottom: 5px">City Trail du Campanin</div>
+          <div style="font-size: 13.5px; color: var(--color-neutral-500)">Menton · 11,5 km · 364 m D+</div>
+        </div>
+        <span class="tag tag-accent" style="font-size: 11px; white-space: nowrap">Trail</span>
+      </a>
+    </div>
+    <p style="font-size: 12.5px; color: var(--color-neutral-500); margin-top: 16px">Calendrier donné à titre indicatif : la présence de l'ASDM à chacune de ces dates n'est pas systématique.</p>
+  </section>
+
+  <section id="communaute" style="border-top: 1px solid var(--color-divider); background: var(--color-surface)">
+    <div style="max-width: 1220px; margin: 0 auto; padding: clamp(60px, 8vw, 110px) clamp(20px, 5vw, 56px)">
+      <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+        <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">04</span>
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Entre les séances</span>
+      </div>
+      <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; margin: 0 0 clamp(30px, 4vw, 48px); max-width: 20ch">Le club continue après l'entraînement.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: clamp(16px, 2vw, 24px)">
+        <div class="community-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(24px, 3vw, 36px); background: var(--color-bg); display: flex; flex-direction: column; gap: 14px">
+          <span class="tag tag-outline" style="align-self: flex-start; font-size: 11px">Strava</span>
+          <h3 style="font-size: 24px; margin: 0">Le club Strava ASDM</h3>
+          <p style="color: var(--color-neutral-400); font-size: 15px; margin: 0">Partagez vos kilomètres, donnez des kudos et suivez les classements entre licenciés — de quoi rester motivé entre deux séances.</p>
+          <a href="#contact" class="btn btn-primary" style="align-self: flex-start; border-radius: 999px; padding: 11px 20px; font-size: 14px">Rejoindre le club Strava ↗</a>
+        </div>
+        <div class="community-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(24px, 3vw, 36px); background: var(--color-bg); display: flex; flex-direction: column; gap: 14px">
+          <span class="tag tag-outline" style="align-self: flex-start; font-size: 11px">Entente running</span>
+          <h3 style="font-size: 24px; margin: 0">ASDM × Menton Marathon</h3>
+          <p style="color: var(--color-neutral-400); font-size: 15px; margin: 0">Au-delà de la piste, l'entente avec Menton Marathon accompagne les adultes sur route et en trail : sorties collectives, dossards et un maillot commun.</p>
+          <div style="display: flex; align-items: center; gap: 10px; color: var(--color-neutral-500); font-size: 13px; margin-top: auto">
+            <span style="width: 22px; height: 2px; background: var(--color-accent); display: block"></span>
+            Courses sur route · Trails · Préparations chrono
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 05 · VIE DU CLUB / COMMUNAUTE -->
-  <section class="section section-dark" id="vie-du-club">
-    <div class="track-texture" aria-hidden="true">
-      <svg viewBox="0 0 700 400" preserveAspectRatio="xMidYMid slice">
-        <rect x="80" y="15" width="540" height="350" rx="175"/>
-        <rect x="120" y="55" width="460" height="270" rx="135"/>
-        <rect x="160" y="95" width="380" height="190" rx="95"/>
-      </svg>
+  <section id="equipement" style="max-width: 1220px; margin: 0 auto; padding: clamp(60px, 8vw, 110px) clamp(20px, 5vw, 56px)">
+    <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+      <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">05</span>
+      <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Équipement</span>
     </div>
-    <div class="container">
-      <div class="section-grid">
-        <div class="section-head">
-          <p class="kicker"><span class="kicker-num">05</span>Entre les séances</p>
-          <h2>Courir ensemble, même entre les séances.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: center">
+      <div>
+        <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; margin: 0 0 16px; max-width: 16ch; text-wrap: balance">Le maillot du club.</h2>
+        <p style="color: var(--color-neutral-400); font-size: 17px; max-width: 46ch; margin: 0 0 20px">Le maillot officiel de l'entente ASDM × Menton Marathon, porté sur la piste comme en compétition. Il est fourni gratuitement avec la licence.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; align-items: center">
+        <div style="width: 100%; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); background: linear-gradient(160deg, var(--color-surface), var(--color-bg)); padding: clamp(18px, 3vw, 32px); display: flex; align-items: center; justify-content: center; min-height: 280px">
+          <img data-role="jersey-img" data-side="avant" class="jersey-img is-active" src="assets/maillot-menton-marathon-avant.png" alt="Maillot de l'entente ASDM × Menton Marathon, vue de face" style="max-height: 320px; width: auto; max-width: 100%; object-fit: contain">
+          <img data-role="jersey-img" data-side="arriere" class="jersey-img" src="assets/maillot-menton-marathon-arriere.png" alt="Maillot de l'entente ASDM × Menton Marathon, vue de dos" style="max-height: 320px; width: auto; max-width: 100%; object-fit: contain">
         </div>
-        <div class="section-body">
-          <p class="lead">
-            L'ASDM se vit aussi en dehors des créneaux d'entraînement. Retrouve les activités
-            des membres, partage tes kilomètres et encourage le collectif sur Strava, entre licenciés.
-          </p>
-          <div class="strava-card">
-            <div class="strava-card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M13.828 0 6.4 14.256h4.517L13.83 8.51l2.913 5.746h4.487L13.828 0Zm.017 14.256-2.184 4.28-2.19-4.28H5.977L11.66 24l5.683-9.744h-3.498Z"/></svg>
-            </div>
-            <div>
-              <h3>Strava ASDM</h3>
-              <p>Activités, kudos et classements entre licenciés.</p>
-            </div>
-            <a href="#contact" class="btn btn-outline-light btn-sm strava-cta">Rejoindre l'ASDM sur Strava ↗</a>
-          </div>
+        <div data-role="jersey-toggle" style="display: flex; gap: 8px">
+          <button type="button" class="pill-btn is-active" data-side="avant">Vue de face</button>
+          <button type="button" class="pill-btn" data-side="arriere">Vue de dos</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 05 · ENTENTE RUNNING -->
-  <section class="section" id="running">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker"><span class="kicker-num">06</span>L'entente running</p>
-        <h2>L'ASDM, présente sur route et en trail</h2>
-        <p class="lead lead-center">
-          Au-delà de la piste, l'ASDM accompagne aussi ses athlètes adultes sur route et en trail,
-          grâce à une entente avec Menton Marathon qui élargit encore cette offre.
-        </p>
-      </div>
-
-      <div class="jersey-showcase">
-        <div class="jersey-flip" tabindex="0" role="button" aria-label="Voir le dos du maillot">
-          <img class="jersey-front" src="assets/maillot-menton-marathon-avant.png" alt="Maillot de l'entente ASDM × Menton Marathon, vue de face" loading="lazy">
-          <img class="jersey-back" src="assets/maillot-menton-marathon-arriere.png" alt="Maillot de l'entente ASDM × Menton Marathon, vue de dos" loading="lazy">
-          <span class="jersey-hint">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7M21 12a9 9 0 0 1-15 6.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18 3v4h-4M6 21v-4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Voir le dos
-          </span>
-        </div>
-      </div>
-      <p class="jersey-caption">Le maillot officiel de l'entente ASDM × Menton Marathon</p>
+  <section id="contact" style="max-width: 1220px; margin: 0 auto; padding: clamp(60px, 8vw, 110px) clamp(20px, 5vw, 56px)">
+    <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px">
+      <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">06</span>
+      <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Rejoindre l'ASDM</span>
     </div>
-  </section>
+    <h2 style="font-size: clamp(30px, 4.2vw, 52px); letter-spacing: -0.03em; margin: 0 0 16px; max-width: 18ch">Deux étapes, et vous êtes sur la piste.</h2>
+    <p style="color: var(--color-neutral-400); font-size: 17px; max-width: 58ch; margin: 0 0 clamp(30px, 4vw, 46px)">Téléchargez la fiche correspondant à votre situation, puis appelez le responsable de votre groupe : la première séance d'essai se décide en un coup de fil.</p>
 
-  <!-- 07 · INSCRIPTIONS -->
-  <section class="section section-alt" id="inscriptions">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker">Rejoindre l'ASDM</p>
-        <h2>Inscriptions — Saison 2026 – 2027</h2>
-        <p class="lead lead-center">
-          Téléchargez la fiche d'inscription correspondant à votre situation pour préparer
-          votre dossier avant de nous rencontrer au Stade Saint-Roman.
-        </p>
-      </div>
-
-      <div class="download-cards">
-        <a class="download-card" href="https://drive.google.com/file/d/1fHUbmeqdBZAetE7ULP8leYUsZY-GYtfT/view?usp=sharing" target="_blank" rel="noopener">
-          <div class="download-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5a1.5 1.5 0 0 1 1.5-1.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3.5V7a1 1 0 0 0 1 1h3.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 12v5m0 0 2.2-2.2M12 17l-2.2-2.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="download-text">
-            <h3>Fiche d'inscription — Mineur</h3>
-            <p>Athlètes de moins de 18 ans · PDF à télécharger</p>
-          </div>
-          <span class="download-cta">Télécharger ↗</span>
-        </a>
-        <a class="download-card" href="https://drive.google.com/file/d/1PCuZyP5pd4sSRH-72QChlCGLAcFNn6R5/view?usp=sharing" target="_blank" rel="noopener">
-          <div class="download-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5a1.5 1.5 0 0 1 1.5-1.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3.5V7a1 1 0 0 0 1 1h3.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 12v5m0 0 2.2-2.2M12 17l-2.2-2.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="download-text">
-            <h3>Fiche d'inscription — Majeur</h3>
-            <p>Athlètes de 18 ans et plus · PDF à télécharger</p>
-          </div>
-          <span class="download-cta">Télécharger ↗</span>
-        </a>
-      </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(14px, 1.8vw, 20px); margin-bottom: clamp(36px, 5vw, 64px)">
+      <a href="https://drive.google.com/file/d/1fHUbmeqdBZAetE7ULP8leYUsZY-GYtfT/view?usp=sharing" target="_blank" rel="noopener" class="download-card" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(20px, 2.4vw, 28px); text-decoration: none; color: inherit">
+        <span>
+          <span style="display: block; font-family: var(--font-heading); font-size: 19px; margin-bottom: 4px">Fiche d'inscription — Mineur</span>
+          <span style="font-size: 13px; color: var(--color-neutral-500)">Athlètes de moins de 18 ans · PDF</span>
+        </span>
+        <span style="color: var(--color-accent); font-size: 20px">↓</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1PCuZyP5pd4sSRH-72QChlCGLAcFNn6R5/view?usp=sharing" target="_blank" rel="noopener" class="download-card" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(20px, 2.4vw, 28px); text-decoration: none; color: inherit">
+        <span>
+          <span style="display: block; font-family: var(--font-heading); font-size: 19px; margin-bottom: 4px">Fiche d'inscription — Majeur</span>
+          <span style="font-size: 13px; color: var(--color-neutral-500)">Athlètes de 18 ans et plus · PDF</span>
+        </span>
+        <span style="color: var(--color-accent); font-size: 20px">↓</span>
+      </a>
     </div>
-  </section>
 
-  <!-- 06 · CONTACT / LICENCE -->
-  <section class="section section-cta" id="contact">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker">Rejoins l'ASDM</p>
-        <h2>Prends ta licence ASDM</h2>
-        <p class="lead lead-center">
-          Contacte directement l'un des responsables pour choisir le bon groupe
-          et organiser une première rencontre au Stade Saint-Roman.
-        </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(14px, 1.6vw, 20px)">
+      <div class="contact-card" style="background: var(--color-bg); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(22px, 2.6vw, 30px); display: flex; flex-direction: column; gap: 8px">
+        <div style="width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-divider); background: var(--color-surface); font-family: var(--font-heading); font-size: 20px; color: var(--color-neutral-400); margin-bottom: 4px">JP</div>
+        <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300)">Président</span>
+        <span style="font-family: var(--font-heading); font-size: 21px">Jean-Pierre Dehez</span>
+        <span style="font-size: 13.5px; color: var(--color-neutral-500)">Débutants &amp; minimes sprint</span>
+        <a href="tel:+33789944881" style="font-size: 15px; margin-top: auto; padding-top: 10px">07 89 94 48 81</a>
       </div>
-
-      <div class="contact-grid">
-        <div class="contact-card contact-card-featured">
-          <span class="contact-badge">Président</span>
-          <span class="contact-name">Jean-Pierre Dehez</span>
-          <p class="contact-qualif">Coach minimes &amp; débutants sprint</p>
-          <a class="contact-phone" href="tel:+33789944881">07 89 94 48 81</a>
-        </div>
-        <div class="contact-card">
-          <img class="contact-photo" src="assets/coach-joris.jpg" alt="Joris Delarbre" width="88" height="88" loading="lazy">
-          <span class="contact-badge">Coach demi-fond, running &amp; trail · Éveil-Poussins</span>
-          <span class="contact-name">Joris Delarbre</span>
-          <p class="contact-qualif">CQP Technicien Sportif d'Athlétisme – Demi-fond Marche Running Trail · Initiateur U12</p>
-          <a class="contact-phone" href="tel:+33603655330">06 03 65 53 30</a>
-          <div class="contact-links">
-            <a class="contact-link contact-link-ffa" href="https://www.athle.fr/athletes/1403274" target="_blank" rel="noopener" aria-label="Fiche FFA de Joris Delarbre">FFA</a>
-            <a class="contact-link" href="https://www.instagram.com/joris_dlbr_pro" target="_blank" rel="noopener" aria-label="Instagram de Joris Delarbre">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-            </a>
-            <a class="contact-link" href="https://www.youtube.com/@JorisDELARBRE-ProCoaching" target="_blank" rel="noopener" aria-label="YouTube de Joris Delarbre">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3V9Z" fill="currentColor"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <img class="contact-photo" src="assets/coach-thomas.jpg" alt="Thomas Pemeja" width="88" height="88" loading="lazy">
-          <span class="contact-badge">Coach sprint</span>
-          <span class="contact-name">Thomas Pemeja</span>
-          <p class="contact-qualif">Licence STAPS – Entraînement sportif · Initiateur U12</p>
-          <a class="contact-phone" href="tel:+33651747650">06 51 74 76 50</a>
-          <div class="contact-links">
-            <a class="contact-link contact-link-ffa" href="https://www.athle.fr/athletes/1817583" target="_blank" rel="noopener" aria-label="Fiche FFA de Thomas Pemeja">FFA</a>
-            <a class="contact-link" href="https://www.instagram.com/pemeja_thomas_" target="_blank" rel="noopener" aria-label="Instagram de Thomas Pemeja">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <span class="contact-badge">Coach benjamins</span>
-          <span class="contact-name">Julien</span>
-          <p class="contact-qualif">BPJEPS Activités Physiques pour Tous</p>
-          <a class="contact-phone" href="tel:+33658663816">06 58 66 38 16</a>
-        </div>
+      <div class="contact-card" style="background: var(--color-bg); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(22px, 2.6vw, 30px); display: flex; flex-direction: column; gap: 8px">
+        <img src="assets/coach-joris.jpg" alt="Joris Delarbre" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 1px solid var(--color-divider); margin-bottom: 4px">
+        <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300)">Demi-fond &amp; trail</span>
+        <span style="font-family: var(--font-heading); font-size: 21px">Joris Delarbre</span>
+        <span style="font-size: 13.5px; color: var(--color-neutral-500)">CQP Demi-fond Marche Running Trail · Initiateur U12 · Éveil-Poussins</span>
+        <a href="tel:+33603655330" style="font-size: 15px; margin-top: auto; padding-top: 10px">06 03 65 53 30</a>
+      </div>
+      <div class="contact-card" style="background: var(--color-bg); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(22px, 2.6vw, 30px); display: flex; flex-direction: column; gap: 8px">
+        <img src="assets/coach-thomas.jpg" alt="Thomas Péméja" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 1px solid var(--color-divider); margin-bottom: 4px">
+        <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300)">Sprint</span>
+        <span style="font-family: var(--font-heading); font-size: 21px">Thomas Péméja</span>
+        <span style="font-size: 13.5px; color: var(--color-neutral-500)">Licence STAPS Entraînement sportif · Initiateur U12</span>
+        <a href="tel:+33651747650" style="font-size: 15px; margin-top: auto; padding-top: 10px">06 51 74 76 50</a>
+      </div>
+      <div class="contact-card" style="background: var(--color-bg); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(22px, 2.6vw, 30px); display: flex; flex-direction: column; gap: 8px">
+        <div style="width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-divider); background: var(--color-surface); font-family: var(--font-heading); font-size: 20px; color: var(--color-neutral-400); margin-bottom: 4px">JG</div>
+        <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300)">Benjamins</span>
+        <span style="font-family: var(--font-heading); font-size: 21px">Julien Gagliardi</span>
+        <span style="font-size: 13.5px; color: var(--color-neutral-500)">BPJEPS Activités Physiques pour Tous</span>
+        <a href="tel:+33658663816" style="font-size: 15px; margin-top: auto; padding-top: 10px">06 58 66 38 16</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<div class="finish-strip" aria-hidden="true"></div>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="brand-text">ASD<strong>M</strong></span>
-      <p>Association Sportive du Mentonnais</p>
+<footer style="border-top: 1px solid var(--color-divider); background: var(--color-surface)">
+  <div style="max-width: 1220px; margin: 0 auto; padding: clamp(40px, 5vw, 64px) clamp(20px, 5vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(24px, 3vw, 40px)">
+    <div>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+        <img src="assets/logo-mark.png" alt="Logo de l'ASD Mentonnais" style="height: 46px; width: auto; filter: brightness(0) invert(0.93); opacity: 0.9">
+        <span style="font-family: var(--font-heading); font-size: 22px; letter-spacing: 0.06em; font-weight: 600">ASD<span style="color: var(--color-accent)">M</span></span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--color-neutral-500); margin: 0">Association Sportive du Mentonnais<br>Club d'athlétisme affilié à la Fédération Française d'Athlétisme</p>
     </div>
-    <div class="footer-info">
-      <p><strong>ASD Mentonnais Athlétisme</strong></p>
-      <p>33 Avenue Saint-Jacques &middot; Villa Faraldo<br>06500 Menton</p>
-      <p>Courriel&nbsp;: <a href="mailto:asdmentonnais@gmail.com">asdmentonnais@gmail.com</a></p>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/AsdMentonnaisAthletisme/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook de l'ASD Mentonnais">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><g transform="translate(12,12) scale(0.55) translate(-12.5,-11.5)"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2c0 -1.104 .896 -2 2 -2h2v-4h-2c-3.315 0 -6 2.685 -6 6v2h-3z" fill="currentColor"/></g></svg>
-        </a>
-        <a href="https://www.instagram.com/asd_mentonnais/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram de l'ASD Mentonnais">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-        </a>
+    <div style="font-size: 13.5px; color: var(--color-neutral-400)">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 10px">Siège</div>
+      33 Avenue Saint-Jacques · Villa Faraldo<br>06500 Menton<br>
+      <a href="mailto:asdmentonnais@gmail.com" style="font-size: 13.5px">asdmentonnais@gmail.com</a>
+    </div>
+    <div style="font-size: 13.5px; color: var(--color-neutral-400)">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 10px">Suivre le club</div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+        <a href="https://www.facebook.com/AsdMentonnaisAthletisme/" target="_blank" rel="noopener" style="font-size: 13.5px">Facebook ↗</a>
+        <a href="https://www.instagram.com/asd_mentonnais/" target="_blank" rel="noopener" style="font-size: 13.5px">Instagram ↗</a>
+        <a href="organigramme.html" style="font-size: 13.5px">Organigramme</a>
       </div>
     </div>
-    <div class="footer-legal">
-      <p>© 2026 ASD Mentonnais · En entente avec Menton Marathon</p>
-    </div>
+    <div style="font-size: 12px; color: var(--color-neutral-500); display: flex; align-items: flex-end">© 2026 ASD Mentonnais · En entente avec Menton Marathon</div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
-<script src="https://strava-embeds.com/embed.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

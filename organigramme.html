@@ -4,295 +4,309 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Organigramme — ASD Mentonnais</title>
-<meta name="description" content="Organigramme de l'ASD Mentonnais : bureau, encadrement sportif et commissions du club d'athlétisme de Menton.">
+<meta name="description" content="Le bureau, l'encadrement sportif et les commissions de l'ASD Mentonnais.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="assets/nocturne.css">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden">
 
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+<a href="#top" class="skip-link">Aller au contenu</a>
 
-<header class="site-header" id="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand" aria-label="ASD Mentonnais - Accueil">
-      <img class="brand-mark" src="assets/logo-mark.png" alt="" width="52" height="40">
-      <span class="brand-text">ASD<strong>M</strong></span>
+<header style="position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--color-bg) 82%, transparent); border-bottom: 1px solid var(--color-divider)">
+  <nav style="max-width: 1220px; margin: 0 auto; padding: 14px clamp(20px, 5vw, 56px); display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+    <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--color-text); font-family: var(--font-heading); font-size: 19px; letter-spacing: 0.06em; font-weight: 600">
+      <img src="assets/logo-mark.png" alt="" style="height: 38px; width: auto; filter: brightness(0) invert(0.93); opacity: 0.95">
+      <span>ASD<span style="color: var(--color-accent)">M</span></span>
     </a>
-
-    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html#club">L'association</a></li>
-        <li><a href="index.html#ecole">Entraînements</a></li>
-        <li><a href="index.html#calendrier">Compétitions</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="organigramme.html" aria-current="page">Organigramme</a></li>
-        <li><a href="index.html#vie-du-club">Communauté</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-actions">
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div style="flex: 1"></div>
+    <div style="display: flex; align-items: center; gap: clamp(14px, 2vw, 26px); flex-wrap: wrap; font-size: 13.5px">
+      <a href="index.html#club" class="nav-link">Le club</a>
+      <a href="index.html#entrainements" class="nav-link">Entraînements</a>
+      <a href="calendrier.html" class="nav-link">Calendrier</a>
+      <a href="#top" class="nav-link" aria-current="page">Organigramme</a>
+      <a href="index.html#communaute" class="nav-link">Communauté</a>
+      <a href="index.html#contact" class="btn btn-primary" style="font-size: 13px; padding: 8px 16px; border-radius: 999px">Prendre une licence</a>
     </div>
-  </div>
+  </nav>
 </header>
 
-<main id="contenu">
+<main>
 
-  <section class="section cal-page-hero">
-    <div class="container">
-      <div class="section-head section-head-center">
-        <p class="kicker">Saison 2026 – 2027</p>
-        <h1>Organigramme du club</h1>
-        <p class="lead lead-center">
-          Bureau, encadrement sportif et commissions de l'ASD Mentonnais.
-        </p>
+  <section id="top" style="position: relative; max-width: 1220px; margin: 0 auto; padding: clamp(48px, 7vw, 92px) clamp(20px, 5vw, 56px) clamp(30px, 4vw, 52px)">
+    <div style="position: absolute; inset: 0; overflow: hidden; pointer-events: none" aria-hidden="true">
+      <div style="position: absolute; top: 55%; right: -560px; width: 980px; height: 980px; transform: translateY(-50%); border-radius: 50%; background: repeating-radial-gradient(circle at 50% 50%, transparent 0 33px, color-mix(in srgb, var(--color-accent) 85%, transparent) 33px 35px); -webkit-mask-image: linear-gradient(to left, #000 20%, transparent 78%); mask-image: linear-gradient(to left, #000 18%, transparent 82%); opacity: 0.85"></div>
+      <div style="position: absolute; top: -140px; right: -160px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 20%, transparent), transparent 62%); filter: blur(12px)"></div>
+    </div>
+    <div style="position: relative; animation: asdmRise 0.6s ease both">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px">
+        <span style="width: 28px; height: 2px; background: var(--color-accent); display: block"></span>
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent-300)">Saison 2026 – 2027</span>
       </div>
+      <h1 style="font-size: clamp(38px, 6.4vw, 80px); line-height: 0.98; letter-spacing: -0.035em; margin: 0 0 22px; max-width: 14ch; text-wrap: balance">Qui fait tourner le club.</h1>
+      <p style="font-size: clamp(16px, 1.4vw, 18px); line-height: 1.6; max-width: 56ch; color: var(--color-neutral-300); margin: 0">Bureau, encadrement sportif et commissions : une trentaine de bénévoles font tourner l'ASDM, sur la piste comme en coulisses.</p>
     </div>
   </section>
 
-  <div class="org-page">
-    <div class="org-wrap">
+  <section style="max-width: 1220px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px) clamp(60px, 8vw, 110px)">
 
-      <!-- 01 BUREAU -->
-      <section class="org-section">
-        <div class="org-section-head">
-          <span class="org-num">01</span>
-          <h2>Bureau</h2>
-          <span class="org-rule"></span>
+    <div class="org-section" style="display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(18px, 4vw, 56px); padding: clamp(28px, 4vw, 48px) 0; border-top: 1px solid var(--color-divider)">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px">
+          <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">01</span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Direction</span>
         </div>
-
-        <div class="org-grid-bureau">
-          <div class="org-card org-card-dark org-card-span2">
-            <span class="org-role">Président</span>
-            <span class="org-name">Jean-Pierre Dehez</span>
-          </div>
-          <div class="org-card org-card-span2">
-            <span class="org-role">Vice-président</span>
-            <span class="org-name">Valentin Giannini</span>
-          </div>
-          <div class="org-card">
-            <span class="org-role">Secrétaire</span>
-            <span class="org-name">Joris Delarbre</span>
-          </div>
-          <div class="org-card">
-            <span class="org-role">Secrétaire adjointe</span>
-            <span class="org-name">Delphine Guérin</span>
-          </div>
-          <div class="org-card">
-            <span class="org-role">Trésorière</span>
-            <span class="org-name">Josyane Vial</span>
-          </div>
-          <div class="org-card">
-            <span class="org-role">Trésorière adjointe</span>
-            <span class="org-name">Vanessa Flores Roturier</span>
-          </div>
+        <h2 style="font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.025em; margin: 0 0 8px">Le bureau</h2>
+        <p style="font-size: 14px; color: var(--color-neutral-500); margin: 0; max-width: 34ch">Élu par les licenciés, il porte la vie administrative et financière du club.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(12px, 1.6vw, 18px)">
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300); margin-bottom: 8px">Président</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Jean-Pierre Dehez</div>
         </div>
-      </section>
-
-      <!-- 02 ENCADREMENT SPORTIF -->
-      <section class="org-section">
-        <div class="org-section-head">
-          <span class="org-num">02</span>
-          <h2>Encadrement sportif</h2>
-          <span class="org-rule"></span>
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-300); margin-bottom: 8px">Vice-président</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Valentin Giannini</div>
         </div>
-
-        <div class="org-grid-staff">
-          <div class="org-staff-card org-accent-azure">
-            <h3>U13 · Cadet et plus</h3>
-            <div class="org-staff-lead">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">Thomas Péméja</span>
-            </div>
-            <div class="org-assistants">
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistant entraîneur 1</span>
-                <span class="org-assistant-name">Sevan Verdoyan</span>
-              </div>
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistante entraîneur 2</span>
-                <span class="org-assistant-name">Maëlys Baudouin</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="org-staff-card org-accent-teal">
-            <h3>Demi-fond · Minimes et plus</h3>
-            <div class="org-staff-lead">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">Joris Delarbre</span>
-            </div>
-            <div class="org-assistants">
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistant entraîneur 1</span>
-                <span class="org-assistant-name">Noah Bailleul Amadori</span>
-              </div>
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistant entraîneur 2</span>
-                <span class="org-assistant-name">David Najart</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="org-staff-card org-accent-green">
-            <h3>Benjamins</h3>
-            <div class="org-staff-lead">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">Julien Gagliardi</span>
-            </div>
-            <div class="org-assistants">
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistante entraîneur 1</span>
-                <span class="org-assistant-name">Maëlys Baudouin</span>
-              </div>
-              <div class="org-assistant">
-                <span class="org-assistant-role">Assistante entraîneur 2</span>
-                <span class="org-assistant-name">Loane Besson</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="org-staff-card org-accent-amber">
-            <h3>Débutants &amp; minimes sprint</h3>
-            <div class="org-staff-lead">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">Jean-Pierre Dehez</span>
-            </div>
-          </div>
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 8px">Secrétaire</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Joris Delarbre</div>
         </div>
-
-        <div class="org-soft-block">
-          <div class="org-soft-main">
-            <h3 class="org-soft-title">Éveil athlétisme<br>&amp; Poussins</h3>
-            <div class="org-staff-lead org-accent-azure">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">Joris Delarbre</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Responsable adjointe</span>
-              <span class="org-assistant-name">Mélissa Bertin</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Responsable adjoint 2</span>
-              <span class="org-assistant-name">Jean-Pierre Dehez</span>
-            </div>
-          </div>
-          <div class="org-pool">
-            <span class="org-pool-label">Entraîneurs &amp; assistants</span>
-            <div class="org-pool-grid">
-              <span class="org-chip">Sevan Verdoyan</span>
-              <span class="org-chip">Anissa Bouchandira</span>
-              <span class="org-chip">Loane Besson</span>
-              <span class="org-chip">David Najart</span>
-              <span class="org-chip">Noah Bailleul Amadori</span>
-              <span class="org-chip">Jean-Luc Pelazza</span>
-              <span class="org-chip">Margot Caverivière</span>
-              <span class="org-chip">Thomas Péméja</span>
-              <span class="org-chip">Julien Gagliardi</span>
-            </div>
-          </div>
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 8px">Secrétaire adjointe</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Delphine Guérin</div>
         </div>
-      </section>
-
-      <!-- 03/04/05 COMMISSIONS -->
-      <section class="org-grid-commissions">
-        <div class="org-comm-card">
-          <div class="org-comm-head">
-            <span class="org-num">03</span>
-            <h2>Commission<br>Développement durable</h2>
-          </div>
-          <div class="org-comm-body org-accent-green">
-            <div class="org-staff-lead">
-              <span class="org-role">Président</span>
-              <span class="org-name">Valentin Giannini</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Présidente adjointe</span>
-              <span class="org-assistant-name">Lola Gérace</span>
-            </div>
-          </div>
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 8px">Trésorière</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Josyane Vial</div>
         </div>
-
-        <div class="org-comm-card">
-          <div class="org-comm-head">
-            <span class="org-num">04</span>
-            <h2>Déplacements</h2>
-          </div>
-          <div class="org-comm-body org-accent-teal">
-            <div class="org-staff-lead">
-              <span class="org-role">Responsable</span>
-              <span class="org-name">David Gagliardi</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Responsable adjoint</span>
-              <span class="org-assistant-name">Joris Delarbre</span>
-            </div>
-          </div>
+        <div class="bureau-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(16px, 2vw, 22px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 8px">Trésorière adjointe</div>
+          <div style="font-family: var(--font-heading); font-size: 19px">Vanessa Flores Roturier</div>
         </div>
-
-        <div class="org-comm-card org-card-dark">
-          <div class="org-comm-head">
-            <span class="org-num">05</span>
-            <h2>Commission<br>Communication</h2>
-          </div>
-          <div class="org-comm-grid">
-            <div class="org-assistant">
-              <span class="org-assistant-role">Réseaux sociaux</span>
-              <span class="org-assistant-name">Maëlys Baudouin</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Presse</span>
-              <span class="org-assistant-name">Jean-Pierre Dehez</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Communication interne</span>
-              <span class="org-assistant-name">Joris Delarbre</span>
-            </div>
-            <div class="org-assistant">
-              <span class="org-assistant-role">Site internet</span>
-              <span class="org-assistant-name">Alexandre Vannier</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </div>
-</main>
-
-<div class="finish-strip" aria-hidden="true"></div>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="brand-text">ASD<strong>M</strong></span>
-      <p>Association Sportive du Mentonnais</p>
-    </div>
-    <div class="footer-info">
-      <p><strong>ASD Mentonnais Athlétisme</strong></p>
-      <p>33 Avenue Saint-Jacques &middot; Villa Faraldo<br>06500 Menton</p>
-      <p>Courriel&nbsp;: <a href="mailto:asdmentonnais@gmail.com">asdmentonnais@gmail.com</a></p>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/AsdMentonnaisAthletisme/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook de l'ASD Mentonnais">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><g transform="translate(12,12) scale(0.55) translate(-12.5,-11.5)"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2c0 -1.104 .896 -2 2 -2h2v-4h-2c-3.315 0 -6 2.685 -6 6v2h-3z" fill="currentColor"/></g></svg>
-        </a>
-        <a href="https://www.instagram.com/asd_mentonnais/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram de l'ASD Mentonnais">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-        </a>
       </div>
     </div>
-    <div class="footer-legal">
-      <p>© 2026 ASD Mentonnais · En entente avec Menton Marathon</p>
+
+    <div class="org-section" style="display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(18px, 4vw, 56px); padding: clamp(28px, 4vw, 48px) 0; border-top: 1px solid var(--color-divider)">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px">
+          <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">02</span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">Sur la piste</span>
+        </div>
+        <h2 style="font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.025em; margin: 0 0 8px">L'encadrement sportif</h2>
+        <p style="font-size: 14px; color: var(--color-neutral-500); margin: 0; max-width: 34ch">Cinq groupes d'entraînement, chacun avec son responsable et ses assistants.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: clamp(12px, 1.6vw, 18px)">
+
+        <div class="org-group" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 30px); align-items: start">
+          <div>
+            <h3 style="font-size: 19px; margin: 0 0 6px; text-wrap: pretty">U13 · Cadets et plus</h3>
+            <div style="font-size: 12.5px; color: var(--color-neutral-500)">3 encadrants</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Thomas Péméja</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistant entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Sevan Verdoyan</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistante entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Maëlys Baudouin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-group" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 30px); align-items: start">
+          <div>
+            <h3 style="font-size: 19px; margin: 0 0 6px; text-wrap: pretty">Demi-fond · Minimes et plus</h3>
+            <div style="font-size: 12.5px; color: var(--color-neutral-500)">3 encadrants</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Joris Delarbre</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistant entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Noah Bailleul Amadori</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistant entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">David Najart</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-group" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 30px); align-items: start">
+          <div>
+            <h3 style="font-size: 19px; margin: 0 0 6px; text-wrap: pretty">Benjamins</h3>
+            <div style="font-size: 12.5px; color: var(--color-neutral-500)">3 encadrants</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Julien Gagliardi</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistante entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Maëlys Baudouin</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Assistante entraîneur</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Loane Besson</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-group" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 30px); align-items: start">
+          <div>
+            <h3 style="font-size: 19px; margin: 0 0 6px; text-wrap: pretty">Débutants &amp; minimes sprint</h3>
+            <div style="font-size: 12.5px; color: var(--color-neutral-500)">1 encadrant</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Jean-Pierre Dehez</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-group" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 30px); align-items: start">
+          <div>
+            <h3 style="font-size: 19px; margin: 0 0 6px; text-wrap: pretty">Éveil athlétisme &amp; Poussins</h3>
+            <div style="font-size: 12.5px; color: var(--color-neutral-500)">3 encadrants</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Joris Delarbre</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable adjointe</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Mélissa Bertin</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable adjoint</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Jean-Pierre Dehez</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="border: 1px dashed var(--color-neutral-800); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px)">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 14px">Entraîneurs &amp; assistants du club</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Sevan Verdoyan</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Anissa Bouchandira</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Loane Besson</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">David Najart</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Noah Bailleul Amadori</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Jean-Luc Pelazza</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Margot Caverivière</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Thomas Péméja</span>
+            <span style="font-size: 13.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-divider); color: var(--color-neutral-300)">Julien Gagliardi</span>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <div class="org-section" style="display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(18px, 4vw, 56px); padding: clamp(28px, 4vw, 48px) 0; border-top: 1px solid var(--color-divider)">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px">
+          <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent)">03</span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-500)">En coulisses</span>
+        </div>
+        <h2 style="font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.025em; margin: 0 0 8px">Les commissions</h2>
+        <p style="font-size: 14px; color: var(--color-neutral-500); margin: 0; max-width: 34ch">Développement durable, déplacements et communication.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: clamp(12px, 1.6vw, 18px)">
+        <div class="org-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: flex; flex-direction: column; gap: 14px">
+          <h3 style="font-size: 19px; margin: 0">Développement durable</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Président</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Valentin Giannini</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Présidente adjointe</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Lola Gérace</span>
+            </div>
+          </div>
+        </div>
+        <div class="org-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: flex; flex-direction: column; gap: 14px">
+          <h3 style="font-size: 19px; margin: 0">Déplacements</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-accent-700); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">David Gagliardi</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Responsable adjoint</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Joris Delarbre</span>
+            </div>
+          </div>
+        </div>
+        <div class="org-card" style="border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); display: flex; flex-direction: column; gap: 14px">
+          <h3 style="font-size: 19px; margin: 0">Communication</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Réseaux sociaux</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Maëlys Baudouin</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Presse</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Jean-Pierre Dehez</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Communication interne</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Joris Delarbre</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--color-neutral-800); padding-left: 12px">
+              <span style="font-size: 12.5px; color: var(--color-neutral-500)">Site internet</span>
+              <span style="font-size: 15.5px; font-family: var(--font-heading)">Alexandre Vannier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid var(--color-divider); padding-top: clamp(28px, 4vw, 44px); display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
+      <a href="index.html#contact" class="btn btn-primary" style="border-radius: 999px; padding: 12px 22px; font-size: 14px">Contacter le club</a>
+      <a href="index.html" class="btn btn-ghost" style="border-radius: 999px; padding: 12px 22px; font-size: 14px; color: var(--color-neutral-300)">← Retour à l'accueil</a>
+    </div>
+  </section>
+
+</main>
+
+<footer style="border-top: 1px solid var(--color-divider); background: var(--color-surface)">
+  <div style="max-width: 1220px; margin: 0 auto; padding: clamp(40px, 5vw, 64px) clamp(20px, 5vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(24px, 3vw, 40px)">
+    <div>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px">
+        <img src="assets/logo-mark.png" alt="Logo de l'ASD Mentonnais" style="height: 46px; width: auto; filter: brightness(0) invert(0.93); opacity: 0.9">
+        <span style="font-family: var(--font-heading); font-size: 22px; letter-spacing: 0.06em; font-weight: 600">ASD<span style="color: var(--color-accent)">M</span></span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--color-neutral-500); margin: 0">Association Sportive du Mentonnais<br>Club d'athlétisme affilié à la Fédération Française d'Athlétisme</p>
+    </div>
+    <div style="font-size: 13.5px; color: var(--color-neutral-400)">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 10px">Siège</div>
+      33 Avenue Saint-Jacques · Villa Faraldo<br>06500 Menton<br>
+      <a href="mailto:asdmentonnais@gmail.com" style="font-size: 13.5px">asdmentonnais@gmail.com</a>
+    </div>
+    <div style="font-size: 13.5px; color: var(--color-neutral-400)">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-neutral-500); margin-bottom: 10px">Suivre le club</div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+        <a href="https://www.facebook.com/AsdMentonnaisAthletisme/" target="_blank" rel="noopener" style="font-size: 13.5px">Facebook ↗</a>
+        <a href="https://www.instagram.com/asd_mentonnais/" target="_blank" rel="noopener" style="font-size: 13.5px">Instagram ↗</a>
+        <a href="calendrier.html" style="font-size: 13.5px">Calendrier</a>
+      </div>
+    </div>
+    <div style="font-size: 12px; color: var(--color-neutral-500); display: flex; align-items: flex-end">© 2026 ASD Mentonnais · En entente avec Menton Marathon</div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
