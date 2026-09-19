@@ -1,0 +1,86 @@
+/* ASDM — site-specific rules layered on top of nocturne.css.
+   Anything here converts a prototype `style-hover="…"` into a real
+   :hover rule, or supports the JS-driven filter/toggle interactions. */
+
+body { margin: 0; }
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 82px; }
+
+@keyframes asdmRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+a:hover { color: var(--color-accent-300); }
+
+/* Skip link */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 30;
+  background: var(--color-surface); color: var(--color-text);
+  border: 1px solid var(--color-accent); border-radius: 999px;
+  padding: 10px 18px; font-size: 14px; text-decoration: none;
+}
+.skip-link:focus { left: 16px; top: 12px; }
+
+/* Nav links */
+.nav-link { color: var(--color-neutral-400); text-decoration: none; }
+.nav-link:hover, .nav-link[aria-current="page"] { color: var(--color-text); }
+
+/* Filter / toggle pills (training days, jersey side, calendar kind) */
+.pill-btn {
+  cursor: pointer; font-family: var(--font-body); font-size: 13.5px;
+  padding: 9px 16px; border-radius: 999px; transition: all 0.2s;
+  border: 1px solid var(--color-divider); background: transparent;
+  color: var(--color-neutral-400);
+}
+.pill-btn:hover { border-color: var(--color-accent); }
+.pill-btn.is-active {
+  border-color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  color: var(--color-accent-200);
+}
+
+/* Training slots */
+.slot-filled { border-left: 2px solid var(--color-accent-700); padding-left: 14px; }
+.slot-empty {
+  border-left: 2px solid var(--color-neutral-800); padding-left: 14px;
+  color: var(--color-neutral-500); font-size: 14px;
+}
+[hidden] { display: none !important; }
+
+/* Home hover surfaces */
+.event-row { transition: background 0.2s, padding 0.2s; }
+.event-row:hover { background: var(--color-surface); }
+.community-card, .download-card, .contact-card, .org-card, .org-group, .bureau-card {
+  transition: border-color 0.2s, background 0.2s;
+}
+.download-card:hover { border-color: var(--color-accent); background: var(--color-surface); }
+.org-card:hover, .org-group:hover, .bureau-card:hover { border-color: var(--color-accent-700); background: var(--color-surface); }
+
+/* Calendar event cards */
+.cal-event-card { transition: border-color 0.2s, background 0.2s; }
+.cal-event-card:hover { border-color: var(--color-accent-700); background: var(--color-surface); }
+
+/* Jersey images: two stacked, JS toggles which is visible */
+.jersey-img { display: none; }
+.jersey-img.is-active { display: block; }
+
+/* Fixed-sidebar grids (calendar months, org sections/groups) collapse to one
+   column on narrow screens instead of squeezing the content column. */
+@media (max-width: 640px) {
+  [data-role="cal-month"],
+  .org-section,
+  .org-group {
+    grid-template-columns: 1fr !important;
+  }
+  [data-role="cal-month"] > div:first-child {
+    position: static !important;
+  }
+  .cal-event-card {
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+  }
+  .cal-event-card > span {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
