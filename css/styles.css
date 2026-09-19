@@ -760,13 +760,6 @@ img { max-width: 100%; display: block; }
 }
 .link-arrow:hover { text-decoration: underline; }
 
-.instagram-embed-wrap {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-}
-.instagram-embed-wrap iframe { border-radius: var(--radius) !important; }
-
 .route-embeds {
   margin-top: 16px;
   display: grid;
